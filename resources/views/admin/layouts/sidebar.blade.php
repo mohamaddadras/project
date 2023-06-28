@@ -157,24 +157,24 @@
                     </li>
                 </ul>
                 <ul>
-                    <li @if (setActiveClassDiscount($currentRoute)) class="open active conditional-bg" @endif>
+                    <li @if (setActiveClassOrder($currentRoute)) class="open active conditional-bg" @endif>
                         <a href="#" class="dropdown-toggle">
                             <i class="icon-basket-loaded fa-flip-horizontal"></i>
                             <span>سفارشات</span>
                         </a>
                         <ul>
                             <li>
-                                <a href="{{ route('admin.market.discount.copan.index') }}"
-                                    @if (setActiveClass(route('admin.market.discount.copan.index'))) class="current" @endif>
+                                <a href="{{ route('admin.market.order.index') }}"
+                                    @if (setActiveClass(route('admin.market.order.index'))) class="current" @endif>
                                     <i class="fas fa-basket-shopping"></i>
-                                    <span>تمام سفازشات</span>
+                                    <span>تمام سفارشات</span>
                                 </a>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                <a href="{{ route('admin.market.discount.common-discount.index') }}"
-                                    @if (setActiveClass(route('admin.market.discount.common-discount.index'))) class="current" @endif>
+                                <a href="{{ route('admin.market.order.new') }}"
+                                    @if (setActiveClass(route('admin.market.order.new'))) class="current" @endif>
                                     <i class="fas fa-file-lines"></i>
                                     <span>جدید</span>
                                 </a>
@@ -182,8 +182,8 @@
                         </ul>
                         <ul>
                             <li>
-                                <a href="{{ route('admin.market.discount.amazing-sale.index') }}"
-                                    @if (setActiveClass(route('admin.market.discount.amazing-sale.index'))) class="current" @endif>
+                                <a href="{{ route('admin.market.order.sending') }}"
+                                    @if (setActiveClass(route('admin.market.order.sending'))) class="current" @endif>
                                     <i class="fas fa-motorcycle"></i>
                                     <span>در حال ارسال</span>
                                 </a>
@@ -191,8 +191,8 @@
                         </ul>
                         <ul>
                             <li>
-                                <a href="{{ route('admin.market.discount.amazing-sale.index') }}"
-                                    @if (setActiveClass(route('admin.market.discount.amazing-sale.index'))) class="current" @endif>
+                                <a href="{{ route('admin.market.order.unpaid') }}"
+                                    @if (setActiveClass(route('admin.market.order.unpaid'))) class="current" @endif>
                                     <i class="fas fa-sack-dollar"></i>
                                     <span>پرداخت نشده</span>
                                 </a>
@@ -200,8 +200,8 @@
                         </ul>
                         <ul>
                             <li>
-                                <a href="{{ route('admin.market.discount.amazing-sale.index') }}"
-                                    @if (setActiveClass(route('admin.market.discount.amazing-sale.index'))) class="current" @endif>
+                                <a href="{{ route('admin.market.order.canceled') }}"
+                                    @if (setActiveClass(route('admin.market.order.canceled'))) class="current" @endif>
                                     <i class="fas fa-x"></i>
                                     <span>باطل شده</span>
                                 </a>
@@ -209,8 +209,8 @@
                         </ul>
                         <ul>
                             <li>
-                                <a href="{{ route('admin.market.discount.amazing-sale.index') }}"
-                                    @if (setActiveClass(route('admin.market.discount.amazing-sale.index'))) class="current" @endif>
+                                <a href="{{ route('admin.market.order.returned') }}"
+                                    @if (setActiveClass(route('admin.market.order.returned'))) class="current" @endif>
                                     <i class="fas fa-reply"></i>
                                     <span>مرجوعی</span>
                                 </a>

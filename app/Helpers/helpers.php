@@ -15,6 +15,12 @@ function setActiveClassMarket($currentRoute)
         route('admin.market.discount.copan.index'),
         route('admin.market.discount.common-discount.index'),
         route('admin.market.discount.amazing-sale.index'),
+        route('admin.market.order.index'),
+        route('admin.market.order.new'),
+        route('admin.market.order.sending'),
+        route('admin.market.order.unpaid'),
+        route('admin.market.order.canceled'),
+        route('admin.market.order.returned'),
     ];
     return in_array($currentRoute, $marketRouteArray) == true ? true : false;
 }
@@ -35,6 +41,19 @@ function setActiveClassDiscount($currentRoute)
         route('admin.market.discount.copan.index'),
         route('admin.market.discount.common-discount.index'),
         route('admin.market.discount.amazing-sale.index'),
+    ];
+    return in_array($currentRoute, $marketRouteArray) == true ? true : false;
+}
+
+function setActiveClassOrder($currentRoute)
+{
+    $marketRouteArray = [
+        route('admin.market.order.index'),
+        route('admin.market.order.new'),
+        route('admin.market.order.sending'),
+        route('admin.market.order.unpaid'),
+        route('admin.market.order.canceled'),
+        route('admin.market.order.returned'),
     ];
     return in_array($currentRoute, $marketRouteArray) == true ? true : false;
 }
